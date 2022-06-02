@@ -9,12 +9,12 @@ const questions = [
     type: "input",
     message: "What is the title of your project?",
     name: "projectTitle",
-    validate: (input) => {
-      if (input.projectTitle) {
-        return true;
-      }
-      return "Please enter a title for your project";
-    },
+    // validate: (input) => {
+    //   if (input.projectTitle) {
+    //     return true;
+    //   }
+    //   return "Please enter a title for your project";
+    // },
   },
   {
     type: "input",
@@ -80,6 +80,10 @@ const questions = [
 //   }
 // };
 
-inquirer.prompt(questions).then((answers) => {
+const init = async () => {
+  const answers = await inquirer.prompt(questions);
+
   console.log(answers);
-});
+};
+
+init();
