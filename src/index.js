@@ -30,26 +30,37 @@ const questions = [
   },
   {
     //Need to change this to a drop down of license options
-    type: "input",
-    message: "What is the license for your project?",
+    type: "list",
+    message: "Please select the license for your project",
     name: "projectLicense",
+    choices: [
+      "Apache",
+      "GNU General Public",
+      "MIT",
+      "BSD 2-Clause Simplified",
+      "BSD 3-Clause",
+      "Boost Software",
+      "Creative Commons Zero",
+      "Eclipse Public 2.0",
+      "None",
+    ],
   },
   {
     //Need to make this conditional
     type: "input",
-    message: "Who contributed to this project?",
+    message: "Please enter contribution guidelines for the project",
     name: "projectContribution",
   },
   {
     //Need to make this conditional
     type: "input",
-    message: "What are the steps to use this project?",
+    message: "Please enter usage information for the project",
     name: "projectUsage",
   },
   {
     //Need to make this conditional
     type: "input",
-    message: "What are the tests?",
+    message: "Please enter information on how a user could test the project",
     name: "projectTests",
   },
   {
@@ -59,19 +70,18 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is your email address",
+    message: "What is your email address?",
     name: "projectEmail",
   },
 ];
 
 const init = async () => {
-  let inProgress = true;
+  const readmeInfo = [];
 
-  while (inProgress) {
-    const answers = await inquirer.prompt(questions);
+  const answers = await inquirer.prompt(questions);
 
-    console.log(answers);
-  }
+  console.log(answers);
+  readmeInfo.push(answers);
 };
 
 init();
