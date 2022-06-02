@@ -9,11 +9,22 @@ const questions = [
     type: "input",
     message: "What is the title of your project?",
     name: "projectTitle",
+    validate: (input) => {
+      if (input.projectTitle) {
+        return true;
+      }
+      return "Please enter a title for your project";
+    },
   },
   {
     type: "input",
     message: "What is the description of your project?",
     name: "projectDescription",
+    validate: (input) => {
+      if (input.projectDescription)
+      return true;
+    }
+    return "Please enter a description for your project",
   },
   {
     //Need to as a Y/N question and prompt for next steps
@@ -55,26 +66,5 @@ const questions = [
     type: "input",
     message: "What is your email address",
     name: "projectEmail",
-  },
-];
-
-//Title name
-//Short description of what, why and how
-
-//What is the project for?
-//How do you use it?
-//What are the steps to install your project?
-
-//What was the motivation?
-//Why did you build the project?
-//What problem does it solve?
-//What did you learn?
-
-//How to report issues?
-//How to contribute?
-
-const questions = [
-  {
-    type: "input",
   },
 ];
