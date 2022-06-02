@@ -64,26 +64,14 @@ const questions = [
   },
 ];
 
-// const init = async () => {
-//   let inProgress = true;
-//   const readMe = [];
-
-//   while (inProgress) {
-//     const answers = await inquirer.prompt(questions);
-
-//     console.log(answers);
-//     readMe.push(answers);
-
-//     if (!answers.continue) {
-//       inProgress = false;
-//     }
-//   }
-// };
-
 const init = async () => {
-  const answers = await inquirer.prompt(questions);
+  let inProgress = true;
 
-  console.log(answers);
+  while (inProgress) {
+    const answers = await inquirer.prompt(questions);
+
+    console.log(answers);
+  }
 };
 
 init();
