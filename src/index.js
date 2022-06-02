@@ -20,11 +20,6 @@ const questions = [
     type: "input",
     message: "What is the description of your project?",
     name: "projectDescription",
-    validate: (input) => {
-      if (input.projectDescription)
-      return true;
-    }
-    return "Please enter a description for your project",
   },
   {
     //Need to as a Y/N question and prompt for next steps
@@ -68,3 +63,23 @@ const questions = [
     name: "projectEmail",
   },
 ];
+
+// const init = async () => {
+//   let inProgress = true;
+//   const readMe = [];
+
+//   while (inProgress) {
+//     const answers = await inquirer.prompt(questions);
+
+//     console.log(answers);
+//     readMe.push(answers);
+
+//     if (!answers.continue) {
+//       inProgress = false;
+//     }
+//   }
+// };
+
+inquirer.prompt(questions).then((answers) => {
+  console.log(answers);
+});
