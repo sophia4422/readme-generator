@@ -85,3 +85,62 @@ const init = async () => {
 };
 
 init();
+
+const generateReadme = (readmeInfo) => {
+  const readme = `# ${generateReadme(
+    projectTitle
+  )} ![MIT](https://img.shields.io/badge/MIT-license-green)
+
+  # Table of Contents
+  
+  - [Description](#description)
+  - [Installation](#installation)
+  - [License](#license)
+  - [Contributions](#contributions)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+  # Description
+  
+  ${generateReadme(projectDescription)}
+  
+  # Installation
+  
+  Please follow the installation instructions below:
+  
+  
+  ${generateReadme(projectInstall)}
+
+  
+  # License
+  
+  ${generateReadme(projectLicense)} License
+  
+  # Contributions
+  
+  The following contributions were made:
+
+  ${generateReadme(projectContribution)}
+  
+  # Usage
+  
+ 
+  ${generateReadme(projectUsage)}
+ 
+  
+  # Tests
+  
+  ${generateReadme(projectTests)}
+  
+  # Questions
+  
+  If you have any questions, please contact me via email: ${generateReadme(
+    projectEmail
+  )}
+  
+  My Github profile is [here](https://github.com/${generateReadme(
+    projectUsername
+  )})
+  `;
+};
