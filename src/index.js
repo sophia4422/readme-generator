@@ -1,9 +1,9 @@
 console.log("Hello from NodeJS");
 
-// const fs = require("fs");
-
 //import inquirer
 const inquirer = require("inquirer");
+
+const fs = require("fs");
 
 //What do we want to ask the user?
 const questions = [
@@ -92,63 +92,63 @@ const init = async () => {
   console.log(readmeInfo);
 };
 
-// const generateReadme = (readmeInfo) => {
-//   const readme = `# ${generateReadme(
-//     projectTitle
-//   )} ![MIT](https://img.shields.io/badge/MIT-license-green)
+const generateReadme = (readmeInfo) => {
+  const readme = `# ${generateReadme(
+    projectTitle
+  )} ![MIT](https://img.shields.io/badge/MIT-license-green)
 
-//     # Table of Contents
+    # Table of Contents
 
-//     - [Description](#description)
-//     - [Installation](#installation)
-//     - [License](#license)
-//     - [Contributions](#contributions)
-//     - [Usage](#usage)
-//     - [Tests](#tests)
-//     - [Questions](#questions)
+    - [Description](#description)
+    - [Installation](#installation)
+    - [License](#license)
+    - [Contributions](#contributions)
+    - [Usage](#usage)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
-//     # Description
+    # Description
 
-//     ${generateReadme(projectDescription)}
+    ${generateReadme(projectDescription)}
 
-//     # Installation
+    # Installation
 
-//     Please follow the installation instructions below:
+    Please follow the installation instructions below:
 
-//     ${generateReadme(projectInstall)}
+    ${generateReadme(projectInstall)}
 
-//     # License
+    # License
 
-//     ${generateReadme(projectLicense)} License
+    ${generateReadme(projectLicense)} License
 
-//     # Contributions
+    # Contributions
 
-//     The following contributions were made:
+    The following contributions were made:
 
-//     ${generateReadme(projectContribution)}
+    ${generateReadme(projectContribution)}
 
-//     # Usage
+    # Usage
 
-//     ${generateReadme(projectUsage)}
+    ${generateReadme(projectUsage)}
 
-//     # Tests
+    # Tests
 
-//     ${generateReadme(projectTests)}
+    ${generateReadme(projectTests)}
 
-//     # Questions
+    # Questions
 
-//     If you have any questions, please contact me via email: ${generateReadme(
-//       projectEmail
-//     )}
+    If you have any questions, please contact me via email: ${generateReadme(
+      projectEmail
+    )}
 
-//     My Github profile is [here](https://github.com/${generateReadme(
-//       projectUsername
-//     )})
-//     `;
+    My Github profile is [here](https://github.com/${generateReadme(
+      projectUsername
+    )})
+    `;
 
-//   return readme;
-// };
+  return readme;
+};
 
-// fs.writeFileSync("NEWREADME.md", readme);
+fs.writeFileSync("GENERATEDREADME.md", readme);
 
 init();
