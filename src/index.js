@@ -27,13 +27,13 @@ const questions = [
   {
     //Y/N question and prompt for next steps
     //Conditional question
-    type: "confirm",
-    message: "Do you want to add project installation details?",
-    name: "confirmInstall",
+    // type: "confirm",
+    // message: "Do you want to add project installation details?",
+    // name: "confirmInstall",
   },
   {
     //confirm installation details
-    when: "confirmInstall",
+    // when: "confirmInstall",
     type: "input",
     message: "Enter installation details here:",
     name: "projectInstall",
@@ -57,40 +57,40 @@ const questions = [
   },
   {
     //conditional
-    type: "confirm",
-    message: "Do you want to add contribution guidelines for this project?",
-    name: "confirmContribution",
+    // type: "confirm",
+    // message: "Do you want to add contribution guidelines for this project?",
+    // name: "confirmContribution",
   },
   {
     //conditional
-    when: "confirmContribution",
+    // when: "confirmContribution",
     type: "input",
     message: "Please enter contribution guidelines for the project",
     name: "projectContribution",
   },
   {
     //conditional
-    type: "confirm",
-    message: "Do you want to add usage information for this project?",
-    name: "confirmUsage",
+    // type: "confirm",
+    // message: "Do you want to add usage information for this project?",
+    // name: "confirmUsage",
   },
   {
     //conditional
-    when: "confirmUsage",
+    // when: "confirmUsage",
     type: "input",
     message: "Please enter usage information for the project",
     name: "projectUsage",
   },
   {
     //conditional
-    type: "confirm",
-    message:
-      "Would you like to add details on how a user could test the project?",
-    name: "confirmTests",
+    // type: "confirm",
+    // message:
+    //   "Would you like to add details on how a user could test the project?",
+    // name: "confirmTests",
   },
   {
     //conditional
-    when: "confirmTests",
+    // when: "confirmTests",
     type: "input",
     message: "Please enter information on how a user could test the project:",
     name: "projectTests",
@@ -114,6 +114,8 @@ const init = async () => {
 
   console.log(answers);
   readmeInfo.push(answers);
+
+  console.log(readmeInfo);
 };
 
 // const generateReadme = (readmeInfo) => {
