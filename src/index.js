@@ -25,13 +25,6 @@ const questions = [
     name: "projectDescription",
   },
   {
-    //Y/N question and prompt for next steps
-    //Conditional question
-    // type: "confirm",
-    // message: "Do you want to add project installation details?",
-    // name: "confirmInstall",
-  },
-  {
     //confirm installation details
     // when: "confirmInstall",
     type: "input",
@@ -57,12 +50,6 @@ const questions = [
   },
   {
     //conditional
-    // type: "confirm",
-    // message: "Do you want to add contribution guidelines for this project?",
-    // name: "confirmContribution",
-  },
-  {
-    //conditional
     // when: "confirmContribution",
     type: "input",
     message: "Please enter contribution guidelines for the project",
@@ -70,23 +57,10 @@ const questions = [
   },
   {
     //conditional
-    // type: "confirm",
-    // message: "Do you want to add usage information for this project?",
-    // name: "confirmUsage",
-  },
-  {
-    //conditional
     // when: "confirmUsage",
     type: "input",
     message: "Please enter usage information for the project",
     name: "projectUsage",
-  },
-  {
-    //conditional
-    // type: "confirm",
-    // message:
-    //   "Would you like to add details on how a user could test the project?",
-    // name: "confirmTests",
   },
   {
     //conditional
