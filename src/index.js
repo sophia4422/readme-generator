@@ -25,14 +25,21 @@ const questions = [
     name: "projectDescription",
   },
   {
-    //Need to as a Y/N question and prompt for next steps
-    //Need to make this conditional
+    //Y/N question and prompt for next steps
+    //Conditional question
+    type: "confirm",
+    message: "Do you want to add project installation details?",
+    name: "confirmInstall",
+  },
+  {
+    //confirm installation details
+    when: "confirmInstall",
     type: "input",
-    message: "What is the first step to install your project?",
+    message: "Enter installation details here:",
     name: "projectInstall",
   },
   {
-    //Need to change this to a drop down of license options
+    //drop down of license options
     type: "list",
     message: "Please select the license for your project",
     name: "projectLicense",
@@ -49,21 +56,43 @@ const questions = [
     ],
   },
   {
-    //Need to make this conditional
+    //conditional
+    type: "confirm",
+    message: "Do you want to add contribution guidelines for this project?",
+    name: "confirmContribution",
+  },
+  {
+    //conditional
+    when: "confirmContribution",
     type: "input",
     message: "Please enter contribution guidelines for the project",
     name: "projectContribution",
   },
   {
-    //Need to make this conditional
+    //conditional
+    type: "confirm",
+    message: "Do you want to add usage information for this project?",
+    name: "confirmUsage",
+  },
+  {
+    //conditional
+    when: "confirmUsage",
     type: "input",
     message: "Please enter usage information for the project",
     name: "projectUsage",
   },
   {
-    //Need to make this conditional
+    //conditional
+    type: "confirm",
+    message:
+      "Would you like to add details on how a user could test the project?",
+    name: "confirmTests",
+  },
+  {
+    //conditional
+    when: "confirmTests",
     type: "input",
-    message: "Please enter information on how a user could test the project",
+    message: "Please enter information on how a user could test the project:",
     name: "projectTests",
   },
   {
@@ -144,6 +173,6 @@ const init = async () => {
 //   return readme;
 // };
 
-init();
-
 // fs.writeFileSync("NEWREADME.md", readme);
+
+init();
