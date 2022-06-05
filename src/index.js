@@ -26,10 +26,19 @@ const questions = [
   },
   {
     //confirm installation details
+    type: "confirm",
+    message: "Would you like to add project installation details?",
+    name: "confirmInstall",
+  },
+  {
+    //confirm installation details
     // when: "confirmInstall",
     type: "input",
     message: "Enter installation details here:",
     name: "projectInstall",
+    when(answers) {
+      return answers.confirmInstall;
+    },
   },
   {
     //drop down of license options
@@ -51,9 +60,26 @@ const questions = [
   {
     //conditional
     // when: "confirmContribution",
+    type: "confirm",
+    message: "Would you like to enter contribution guidelines for the project?",
+    name: "confirmContribution",
+  },
+  {
+    //conditional
+    // when: "confirmContribution",
     type: "input",
     message: "Please enter contribution guidelines for the project",
     name: "projectContribution",
+    when(answers) {
+      return answers.confirmContribution;
+    },
+  },
+  {
+    //conditional
+    // when: "confirmUsage",
+    type: "confirm",
+    message: "Would you like to add usage information for the project?",
+    name: "confirmUsage",
   },
   {
     //conditional
@@ -61,6 +87,17 @@ const questions = [
     type: "input",
     message: "Please enter usage information for the project",
     name: "projectUsage",
+    when(answers) {
+      return answers.confirmUsage;
+    },
+  },
+  {
+    //conditional
+    // when: "confirmTests",
+    type: "confirm",
+    message:
+      "Would you like to add information on how a user could test the project?",
+    name: "confirmTests",
   },
   {
     //conditional
@@ -68,6 +105,9 @@ const questions = [
     type: "input",
     message: "Please enter information on how a user could test the project:",
     name: "projectTests",
+    when(answers) {
+      return answers.confirmTests;
+    },
   },
   {
     type: "input",
@@ -102,7 +142,9 @@ const generateReadMe = (answers) => {
 
     Please follow the installation instructions below:
 
+    \`\`\`
     ${answers.projectInstall}
+    \`\`\`
 
     # License
 
@@ -116,18 +158,22 @@ const generateReadMe = (answers) => {
 
     # Usage
 
+    \`\`\`
     ${answers.projectUsage}
+    \`\`\`
 
     # Tests
 
+    \`\`\`
     ${answers.projectTests}
+    \`\`\`
 
     # Questions
 
     If you have any questions, please contact me via email: ${answers.projectEmail}
 
     My Github profile is [here](https://github.com/${answers.projectUsername})
-    ;`;
+`;
 };
 
 const init = async () => {
