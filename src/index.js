@@ -82,7 +82,7 @@ const questions = [
 ];
 
 const generateReadMe = (answers) => {
-  return `# ${answers.title} ![MIT](https://img.shields.io/badge/MIT-license-green)
+  return `# ${answers.projectTitle} ![MIT](https://img.shields.io/badge/MIT-license-green)
 
     # Table of Contents
 
@@ -96,7 +96,7 @@ const generateReadMe = (answers) => {
 
     # Description
 
-    ${answers.description}
+    ${answers.projectDescription}
 
     # Installation
 
