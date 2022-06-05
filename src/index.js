@@ -11,18 +11,23 @@ const questions = [
     type: "input",
     message: "What is the title of your project?",
     name: "projectTitle",
-    // validate: (input) => {
-    //   if (!input.projectTitle) {
-    //     return "Please enter a title for your project";
-    //   } else {
-    //     return true;
-    //   }
-    // },
+    validate(answers) {
+      if (!answers) {
+        return "Please enter a title.";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     message: "What is the description of your project?",
     name: "projectDescription",
+    validate(answers) {
+      if (!answers) {
+        return "Please enter a description.";
+      }
+      return true;
+    },
   },
   {
     //confirm installation details
@@ -113,11 +118,23 @@ const questions = [
     type: "input",
     message: "What is your github username?",
     name: "projectUsername",
+    validate(answers) {
+      if (!answers) {
+        return "Please enter a your github username.";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     message: "What is your email address?",
     name: "projectEmail",
+    validate(answers) {
+      if (!answers) {
+        return "Please enter your email address.";
+      }
+      return true;
+    },
   },
 ];
 
