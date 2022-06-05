@@ -81,76 +81,68 @@ const questions = [
   },
 ];
 
+const generateReadMe = (answers) => {
+  return `# ${answers.title} ![MIT](https://img.shields.io/badge/MIT-license-green)
+
+    # Table of Contents
+
+    - [Description](#description)
+    - [Installation](#installation)
+    - [License](#license)
+    - [Contributions](#contributions)
+    - [Usage](#usage)
+    - [Tests](#tests)
+    - [Questions](#questions)
+
+    # Description
+
+    ${answers.description}
+
+    # Installation
+
+    Please follow the installation instructions below:
+
+    ${answers.projectInstall}
+
+    # License
+
+    ${answers.projectLicense} License
+
+    # Contributions
+
+    The following contributions were made:
+
+    ${answers.projectContribution}
+
+    # Usage
+
+    ${answers.projectUsage}
+
+    # Tests
+
+    ${answers.projectTests}
+
+    # Questions
+
+    If you have any questions, please contact me via email: ${answers.projectEmail}
+
+    My Github profile is [here](https://github.com/${answers.projectUsername})
+    ;`;
+};
+
 const init = async () => {
-  const readmeInfo = [];
+  //const readmeInfo = [];
 
   const answers = await inquirer.prompt(questions);
 
   console.log(answers);
-  readmeInfo.push(answers);
+  //readmeInfo.push(answers);
 
-  console.log(readmeInfo);
-};
+  //console.log(readmeInfo);
 
-const generateReadme = (readmeInfo) => {
-  const readMe = () => {
-    `# ${readmeInfo(
-      projectTitle
-    )} ![MIT](https://img.shields.io/badge/MIT-license-green)
-  
-      # Table of Contents
-  
-      - [Description](#description)
-      - [Installation](#installation)
-      - [License](#license)
-      - [Contributions](#contributions)
-      - [Usage](#usage)
-      - [Tests](#tests)
-      - [Questions](#questions)
-  
-      # Description
-  
-      ${readmeInfo(projectDescription)}
-  
-      # Installation
-  
-      Please follow the installation instructions below:
-  
-      ${readmeInfo(projectInstall)}
-  
-      # License
-  
-      ${readmeInfo(projectLicense)} License
-  
-      # Contributions
-  
-      The following contributions were made:
-  
-      ${readmeInfo(projectContribution)}
-  
-      # Usage
-  
-      ${readmeInfo(projectUsage)}
-  
-      # Tests
-  
-      ${readmeInfo(projectTests)}
-  
-      # Questions
-  
-      If you have any questions, please contact me via email: ${readmeInfo(
-        projectEmail
-      )}
-  
-      My Github profile is [here](https://github.com/${readmeInfo(
-        projectUsername
-      )})
-      `;
+  const readMe = generateReadMe(answers);
 
-    return readMe;
-  };
+  fs.writeFileSync("./GENERATEDREADME.md", readMe);
 };
 
 init();
-
-fs.writeFileSync("./GENERATEDREADME.md", JSON.stringify(readmeInfo));
