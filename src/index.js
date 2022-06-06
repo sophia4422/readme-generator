@@ -138,8 +138,31 @@ const questions = [
   },
 ];
 
+const getBadge = (license) => {
+  if (license === "None") return "";
+
+  let badgeUrl;
+
+  switch (license) {
+    case "MIT":
+      badgeUrl = "https://img.shields.io/badge/MIT-license-green";
+      break;
+
+    case "Apache":
+      badgeUrl = "https://img.shields.io/badge/Apache-license-green";
+      break;
+
+    default:
+      break;
+  }
+  return `![${license} badge](${badgeUrl})`;
+};
+
 const generateReadMe = (answers) => {
-  return `# ${answers.projectTitle} ![MIT](https://img.shields.io/badge/MIT-license-green)
+  const contributionsText = answers.confirmContribution
+    ? `The following contributions were made: ${answers.projectContribution}`
+    : "No project contributions";
+  return `# ${answers.projectTitle} ${getBadge(answers.projectLicense)}
 
     # Table of Contents
 
@@ -169,9 +192,7 @@ const generateReadMe = (answers) => {
 
     # Contributions
 
-    The following contributions were made:
-
-    ${answers.projectContribution}
+    ${contributionsText}
 
     # Usage
 
@@ -187,10 +208,17 @@ const generateReadMe = (answers) => {
 
     # Questions
 
-    If you have any questions, please contact me via email: ${answers.projectEmail}
+    If you have any questions, please contact me via email: ${
+      answers.projectEmail
+    }
 
     My Github profile is [here](https://github.com/${answers.projectUsername})
 `;
+};
+
+const onFileGenerate = (error) => {
+  const message = error ? "error!" : "Readme generated!";
+  console.log(message);
 };
 
 const init = async () => {
@@ -205,7 +233,7 @@ const init = async () => {
 
   const readMe = generateReadMe(answers);
 
-  fs.writeFileSync("./GENERATEDREADME.md", readMe);
+  fs.writeFileSync("./GENERATEDREADME.md", readMe, onFileGenerate);
 };
 
 init();
