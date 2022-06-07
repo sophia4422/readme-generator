@@ -1,5 +1,3 @@
-console.log("Hello from NodeJS");
-
 //import inquirer
 const inquirer = require("inquirer");
 
@@ -216,24 +214,14 @@ const generateReadMe = (answers) => {
 `;
 };
 
-const onFileGenerate = (error) => {
-  const message = error ? "error!" : "Readme generated!";
-  console.log(message);
-};
-
 const init = async () => {
   //const readmeInfo = [];
 
   const answers = await inquirer.prompt(questions);
 
-  console.log(answers);
-  //readmeInfo.push(answers);
-
-  //console.log(readmeInfo);
-
   const readMe = generateReadMe(answers);
 
-  fs.writeFileSync("./GENERATEDREADME.md", readMe, onFileGenerate);
+  fs.writeFileSync("./GENERATEDREADME.md", readMe);
 };
 
 init();
