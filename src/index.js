@@ -222,6 +222,8 @@ const init = async () => {
   const readMe = generateReadMe(answers);
 
   fs.writeFileSync("./GENERATEDREADME.md", readMe);
+
+  console.log("ReadMe generated!");
 };
 
 init();

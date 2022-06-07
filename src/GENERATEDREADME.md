@@ -1,4 +1,4 @@
-# title ![Apache badge](https://img.shields.io/badge/Apache-license-green)
+# My title ![Apache badge](https://img.shields.io/badge/Apache-license-green)
 
     # Table of Contents
 
@@ -12,14 +12,14 @@
 
     # Description
 
-    DESCRIPTION
+    My description
 
     # Installation
 
     Please follow the installation instructions below:
 
     ```
-    undefined
+    npm run start
     ```
 
     # License
@@ -28,22 +28,22 @@
 
     # Contributions
 
-    The following contributions were made: CONTRIBUTION GUIDLIESNES
+    The following contributions were made: Contribute
 
     # Usage
 
     ```
-    undefined
+    Usage
     ```
 
     # Tests
 
     ```
-    undefined
+    Test123
     ```
 
     # Questions
 
-    If you have any questions, please contact me via email: SDKLSDFLKD
+    If you have any questions, please contact me via email: sophia@email.com
 
-    My Github profile is [here](https://github.com/SDFSKL)
+    My Github profile is [here](https://github.com/sophia4422)
