@@ -16,9 +16,8 @@
     ## Installation
     Please follow the installation instructions below:
 
-    ```
     Install the project using node.js, require(inquirer)
-    ```
+
 
     ## License
     MIT License
@@ -28,15 +27,15 @@
 
     ## Usage
 
-    ```
+
     npm run start
-    ```
+
 
     ## Tests
 
-    ```
+
     undefined
-    ```
+
 
     ## Questions
     If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
