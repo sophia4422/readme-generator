@@ -12,7 +12,7 @@
 
 # Description
 
-Hello, this is a random description. Lalfeofefjejfkadad.
+Hello, this is a description.
 
 # Installation
 
