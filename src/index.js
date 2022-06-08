@@ -162,7 +162,7 @@ const generateReadMe = (answers) => {
     : "No project contributions";
   return `# ${answers.projectTitle} ${getBadge(answers.projectLicense)}
 
-    # Table of Contents
+    ## Table of Contents
 
     - [Description](#description)
     - [Installation](#installation)
@@ -172,44 +172,38 @@ const generateReadMe = (answers) => {
     - [Tests](#tests)
     - [Questions](#questions)
 
-    # Description
-
+    ## Description
     ${answers.projectDescription}
 
-    # Installation
-
+    ## Installation
     Please follow the installation instructions below:
 
     \`\`\`
     ${answers.projectInstall}
     \`\`\`
 
-    # License
-
+    ## License
     ${answers.projectLicense} License
 
     # Contributions
-
     ${contributionsText}
 
-    # Usage
+    ## Usage
 
     \`\`\`
     ${answers.projectUsage}
     \`\`\`
 
-    # Tests
-
+    ## Tests
+    
     \`\`\`
     ${answers.projectTests}
     \`\`\`
 
-    # Questions
-
+    ## Questions
     If you have any questions, please contact me via email: ${
       answers.projectEmail
     }
-
     My Github profile is [here](https://github.com/${answers.projectUsername})
 `;
 };
