@@ -1,4 +1,4 @@
-# gifdskfldkf ![Apache badge](https://img.shields.io/badge/Apache-license-green)
+# Readme Generator ![MIT badge](https://img.shields.io/badge/MIT-license-green)
 
     ## Table of Contents
 
@@ -11,33 +11,33 @@
     - [Questions](#questions)
 
     ## Description
-    sfksfklf
+    This project uses node.js and inquirer to prompt a user with questions which will ultimately formulate the readme.md for their project.
 
     ## Installation
     Please follow the installation instructions below:
 
     ```
-    fsf
+    Install the project using node.js, require(inquirer)
     ```
 
     ## License
-    Apache License
+    MIT License
 
     # Contributions
-    The following contributions were made: dfs
+    The following contributions were made: As I have some errors in my code, please create a pull request and make a dev branch and have a go at improving things. Do not hestiate to get in touch with me using the details below!
 
     ## Usage
 
     ```
-    sfda
+    npm run start
     ```
 
     ## Tests
     
     ```
-    sfsfsf
+    undefined
     ```
 
     ## Questions
-    If you have any questions, please contact me via email: sdf
-    My Github profile is [here](https://github.com/efdf)
+    If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
+    My Github profile is [here](https://github.com/sophia4422)

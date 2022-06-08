@@ -1,21 +1,43 @@
-# Generate a Readme file
+# Readme Generator ![MIT badge](https://img.shields.io/badge/MIT-license-green)
 
-## Description
+    ## Table of Contents
 
-## Installation
+    - [Description](#description)
+    - [Installation](#installation)
+    - [License](#license)
+    - [Contributions](#contributions)
+    - [Usage](#usage)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
-```
-git clone repo: git@github.com:sophia4422/readme-generator.git
-cd readme-generator
-npm install
-```
+    ## Description
+    This project uses node.js and inquirer to prompt a user with questions which will ultimately formulate the readme.md for their project.
 
-## Usage
+    ## Installation
+    Please follow the installation instructions below:
 
-```
-npm run start
-```
+    ```
+    Install the project using node.js, require(inquirer)
+    ```
 
-## Screenshots / Video link
+    ## License
+    MIT License
 
-## Contact me
+    # Contributions
+    The following contributions were made: As I have some errors in my code, please create a pull request and make a dev branch and have a go at improving things. Do not hesitate to get in touch with me using the details below!
+
+    ## Usage
+
+    ```
+    npm run start
+    ```
+
+    ## Tests
+
+    ```
+    undefined
+    ```
+
+    ## Questions
+    If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
+    My Github profile is [here](https://github.com/sophia4422)
