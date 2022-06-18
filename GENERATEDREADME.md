@@ -1,6 +1,6 @@
-# Project Title ![MIT](https://img.shields.io/badge/MIT-license-green)
+# sophia ![BSD 3-Clause badge](https://img.shields.io/badge/BSD3-license-green)
 
-# Table of Contents
+## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
@@ -10,40 +10,34 @@
 - [Tests](#tests)
 - [Questions](#questions)
 
-# Description
+## Description
+description
 
-Hello, this is a description.
-
-# Installation
-
+## Installation
 Please follow the installation instructions below:
 
 ```
-git clone the repository: [paste link here]
-cd [repository name]
-npm install (this will install the project dependencies onto the machine)
+undefined
 ```
 
-# License
-
-License:
+## License
+BSD 3-Clause License
 
 # Contributions
+No project contributions
 
-The following people contributed to this project:
-
-# Usage
+## Usage
 
 ```
-npm run start
+undefined
 ```
 
-# Tests
+## Tests
 
-Add tests
+```
+undefined
+```
 
-# Questions
-
-If you have any questions, please contact me via email: myemail@email.com
-
-My Github profile is [here](https://github.com/sophia4422)
+## Questions
+If you have any questions, please contact me via email: sophia
+My Github profile is [here](https://github.com/sophia)

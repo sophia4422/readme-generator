@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Demo: https://drive.google.com/file/d/170-c2KeriL3cyu_v-wp_7PvQbfGlEGXo/view",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophia4422/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sophia4422/readme-generator/issues"
+  },
+  "homepage": "https://github.com/sophia4422/readme-generator#readme"
+}
