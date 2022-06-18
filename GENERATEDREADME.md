@@ -1,4 +1,4 @@
-# sophia ![BSD 3-Clause badge](https://img.shields.io/badge/BSD3-license-green)
+# SOPHIA4TEST4 ![Creative Commons Zero badge](https://img.shields.io/badge/CC0-license-green)
 
 ## Table of Contents
 
@@ -11,19 +11,21 @@
 - [Questions](#questions)
 
 ## Description
-description
+
+TEST4
 
 ## Installation
-Please follow the installation instructions below:
 
 ```
-undefined
+No installation details
 ```
 
 ## License
-BSD 3-Clause License
+
+Creative Commons Zero License
 
 # Contributions
+
 No project contributions
 
 ## Usage
@@ -39,5 +41,6 @@ undefined
 ```
 
 ## Questions
+
 If you have any questions, please contact me via email: sophia
 My Github profile is [here](https://github.com/sophia)

@@ -181,9 +181,14 @@ const getBadge = (license) => {
 };
 
 const generateReadMe = (answers) => {
+  const installText = answers.projectInstall
+    ? `The following installation steps must be followed: ${answers.projectInstall}`
+    : "No installation details";
+
   const contributionsText = answers.confirmContribution
     ? `The following contributions were made: ${answers.projectContribution}`
     : "No project contributions";
+
   return `# ${answers.projectTitle} ${getBadge(answers.projectLicense)}
 
 ## Table of Contents
@@ -200,10 +205,9 @@ const generateReadMe = (answers) => {
 ${answers.projectDescription}
 
 ## Installation
-Please follow the installation instructions below:
 
 \`\`\`
-${answers.projectInstall}
+${installText}
 \`\`\`
 
 ## License
