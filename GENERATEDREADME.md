@@ -1,4 +1,4 @@
-# SOPHIA4TEST4 ![Creative Commons Zero badge](https://img.shields.io/badge/CC0-license-green)
+# TITLETESTTTT ![BSD 3-Clause badge](https://img.shields.io/badge/BSD3-license-green)
 
 ## Table of Contents
 
@@ -12,32 +12,32 @@
 
 ## Description
 
-TEST4
+TTESTETS
 
 ## Installation
 
 ```
-No installation details
+installllll
 ```
 
 ## License
 
-Creative Commons Zero License
+BSD 3-Clause License
 
 # Contributions
 
-No project contributions
+The following contributions were made: contributeee
 
 ## Usage
 
 ```
-undefined
+usageeee
 ```
 
 ## Tests
 
 ```
-undefined
+testt
 ```
 
 ## Questions

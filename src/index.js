@@ -181,13 +181,21 @@ const getBadge = (license) => {
 };
 
 const generateReadMe = (answers) => {
-  const installText = answers.projectInstall
-    ? `The following installation steps must be followed: ${answers.projectInstall}`
+  const installText = answers.confirmInstall
+    ? `${answers.projectInstall}`
     : "No installation details";
 
   const contributionsText = answers.confirmContribution
     ? `The following contributions were made: ${answers.projectContribution}`
     : "No project contributions";
+
+  const usageText = answers.confirmUsage
+    ? `${answers.projectUsage}`
+    : "No usage information";
+
+  const testText = answers.confirmTests
+    ? `${answers.projectTests}`
+    : "No test information";
 
   return `# ${answers.projectTitle} ${getBadge(answers.projectLicense)}
 
@@ -219,13 +227,13 @@ ${contributionsText}
 ## Usage
 
 \`\`\`
-${answers.projectUsage}
+${usageText}
 \`\`\`
 
 ## Tests
 
 \`\`\`
-${answers.projectTests}
+${testText}
 \`\`\`
 
 ## Questions
