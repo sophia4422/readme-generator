@@ -150,6 +150,30 @@ const getBadge = (license) => {
       badgeUrl = "https://img.shields.io/badge/Apache-license-green";
       break;
 
+    case "GNU General Public":
+      badgeUrl = "https://img.shields.io/badge/GNU-license-green";
+      break;
+
+    case "BSD 2-Clause Simplified":
+      badgeUrl = "https://img.shields.io/badge/BSD2-license-green";
+      break;
+
+    case "BSD 3-Clause":
+      badgeUrl = "https://img.shields.io/badge/BSD3-license-green";
+      break;
+
+    case "Boost Software":
+      badgeUrl = "https://img.shields.io/badge/Boost-license-green";
+      break;
+
+    case "Creative Commons Zero":
+      badgeUrl = "https://img.shields.io/badge/CC0-license-green";
+      break;
+
+    case "Eclipse Public 2.0":
+      badgeUrl = "https://img.shields.io/badge/Eclipse-license-green";
+      break;
+
     default:
       break;
   }

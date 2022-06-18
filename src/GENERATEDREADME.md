@@ -1,4 +1,4 @@
-# HI ![Apache badge](https://img.shields.io/badge/Apache-license-green)
+# sophia ![BSD 3-Clause badge](https://img.shields.io/badge/BSD3-license-green)
 
 ## Table of Contents
 
@@ -11,33 +11,38 @@
 - [Questions](#questions)
 
 ## Description
-HI
+
+fio
 
 ## Installation
+
 Please follow the installation instructions below:
 
 ```
-DSFSD
+undefined
 ```
 
 ## License
-Apache License
+
+BSD 3-Clause License
 
 # Contributions
-The following contributions were made: DJFDJF
+
+No project contributions
 
 ## Usage
 
 ```
-DFDJ
+undefined
 ```
 
 ## Tests
 
 ```
-DEJFDJ
+undefined
 ```
 
 ## Questions
-If you have any questions, please contact me via email: SKLKSL
-My Github profile is [here](https://github.com/SOPIA)
+
+If you have any questions, please contact me via email: sophia
+My Github profile is [here](https://github.com/sophia)
