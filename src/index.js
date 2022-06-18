@@ -162,49 +162,47 @@ const generateReadMe = (answers) => {
     : "No project contributions";
   return `# ${answers.projectTitle} ${getBadge(answers.projectLicense)}
 
-    ## Table of Contents
+## Table of Contents
 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [License](#license)
-    - [Contributions](#contributions)
-    - [Usage](#usage)
-    - [Tests](#tests)
-    - [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [License](#license)
+- [Contributions](#contributions)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Questions](#questions)
 
-    ## Description
-    ${answers.projectDescription}
+## Description
+${answers.projectDescription}
 
-    ## Installation
-    Please follow the installation instructions below:
+## Installation
+Please follow the installation instructions below:
 
-    \`\`\`
-    ${answers.projectInstall}
-    \`\`\`
+\`\`\`
+${answers.projectInstall}
+\`\`\`
 
-    ## License
-    ${answers.projectLicense} License
+## License
+${answers.projectLicense} License
 
-    # Contributions
-    ${contributionsText}
+# Contributions
+${contributionsText}
 
-    ## Usage
+## Usage
 
-    \`\`\`
-    ${answers.projectUsage}
-    \`\`\`
+\`\`\`
+${answers.projectUsage}
+\`\`\`
 
-    ## Tests
-    
-    \`\`\`
-    ${answers.projectTests}
-    \`\`\`
+## Tests
 
-    ## Questions
-    If you have any questions, please contact me via email: ${
-      answers.projectEmail
-    }
-    My Github profile is [here](https://github.com/${answers.projectUsername})
+\`\`\`
+${answers.projectTests}
+\`\`\`
+
+## Questions
+If you have any questions, please contact me via email: ${answers.projectEmail}
+My Github profile is [here](https://github.com/${answers.projectUsername})
 `;
 };
 
