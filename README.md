@@ -1,3 +1,5 @@
+Demo: https://drive.google.com/file/d/170-c2KeriL3cyu_v-wp_7PvQbfGlEGXo/view
+
 # Readme Generator ![MIT badge](https://img.shields.io/badge/MIT-license-green)
 
     ## Table of Contents
@@ -16,9 +18,8 @@
     ## Installation
     Please follow the installation instructions below:
 
-    ```
     Install the project using node.js, require(inquirer)
-    ```
+
 
     ## License
     MIT License
@@ -28,15 +29,15 @@
 
     ## Usage
 
-    ```
+
     npm run start
-    ```
+
 
     ## Tests
 
-    ```
+
     undefined
-    ```
+
 
     ## Questions
     If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
