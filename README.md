@@ -2,43 +2,40 @@ Demo: https://drive.google.com/file/d/170-c2KeriL3cyu_v-wp_7PvQbfGlEGXo/view
 
 # Readme Generator ![MIT badge](https://img.shields.io/badge/MIT-license-green)
 
-    ## Table of Contents
+## Table of Contents
 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [License](#license)
-    - [Contributions](#contributions)
-    - [Usage](#usage)
-    - [Tests](#tests)
-    - [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [License](#license)
+- [Contributions](#contributions)
+- [Usage](#usage)
+- [Questions](#questions)
 
-    ## Description
-    This project uses node.js and inquirer to prompt a user with questions which will ultimately formulate the readme.md for their project.
+## Description
 
-    ## Installation
-    Please follow the installation instructions below:
+This project uses node.js and inquirer to prompt a user with questions which will create a readme.md for their project
 
-    Install the project using node.js, require(inquirer)
+## Installation
 
+```
+Clone the repository, npm i
+```
 
-    ## License
-    MIT License
+## License
 
-    # Contributions
-    The following contributions were made: As I have some errors in my code, please create a pull request and make a dev branch and have a go at improving things. Do not hesitate to get in touch with me using the details below!
+MIT License
 
-    ## Usage
+# Contributions
 
+The following contributions were made: If you would like to contribute / improve this project, please clone the repository
 
-    npm run start
+## Usage
 
+```
+npm run start
+```
 
-    ## Tests
+## Questions
 
-
-    undefined
-
-
-    ## Questions
-    If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
-    My Github profile is [here](https://github.com/sophia4422)
+If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
+My Github profile is [here](https://github.com/sophia4422)

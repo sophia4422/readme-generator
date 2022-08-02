@@ -1,4 +1,4 @@
-# TITLETESTTTT ![BSD 3-Clause badge](https://img.shields.io/badge/BSD3-license-green)
+# Readme Generator ![MIT badge](https://img.shields.io/badge/MIT-license-green)
 
 ## Table of Contents
 
@@ -11,36 +11,32 @@
 - [Questions](#questions)
 
 ## Description
-
-TTESTETS
+This project uses node.js and inquirer to prompt a user with questions which will create a readme.md for their project
 
 ## Installation
 
 ```
-installllll
+Clone the repository, npm i
 ```
 
 ## License
-
-BSD 3-Clause License
+MIT License
 
 # Contributions
-
-The following contributions were made: contributeee
+The following contributions were made: If you would like to contribute / improve this project, please  clone the repository
 
 ## Usage
 
 ```
-usageeee
+npm run start
 ```
 
 ## Tests
 
 ```
-testt
+No test information
 ```
 
 ## Questions
-
-If you have any questions, please contact me via email: sophia
-My Github profile is [here](https://github.com/sophia)
+If you have any questions, please contact me via email: sophiapwall@yahoo.co.uk
+My Github profile is [here](https://github.com/sophia4422)
